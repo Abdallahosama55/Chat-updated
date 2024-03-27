@@ -42,9 +42,10 @@ width:90%
 
 const SidebarLayout = styled.div`
   display: grid;
-  height: calc(100dvh - 54px);
-  grid-template-rows: auto 1fr;
+  height: calc(100dvh - 100px);
+  grid-template-rows: auto auto 1fr;
   gap: 16px;
+  
 `;
 
 const BtnActionGroup = styled.div`

@@ -50,10 +50,10 @@ function MessageInput({onSubmit, isDisabled}) {
         <MessageForm dir={'rtl'} onSubmit={handleSubmit}>
             <div className={'position-relative'}>
                 <Message type="text" placeholder="أكتب رسالة لمتقن شات..." value={message} onChange={(e) => setMessage(e.target.value)} disabled={isDisabled} />
-                <MessageBtn type={'submit'} variant={''} className={'position-absolute top-50 translate-middle-y end-0 color-main'} disabled={isDisabled}>
-                    <PiPaperPlaneRightFill className={'flip-horizontal'} />
+                <MessageBtn type={'submit'} variant={''} className={'position-absolute top-50 translate-middle-y start-0 color-main'} disabled={isDisabled}>
+                    <PiPaperPlaneRightFill   style={{  transform: "scaleX(-1)"}}/>
                 </MessageBtn>
-                <MessageBtn type={'button'} variant={''} className={'position-absolute  top-50 translate-middle-y start-0 color-main'} disabled={isDisabled}>
+                <MessageBtn type={'button'} variant={''} className={'position-absolute  top-50 translate-middle-y end-0 color-main'} disabled={isDisabled}>
                     <PiMicrophoneFill />
                 </MessageBtn>
             </div>

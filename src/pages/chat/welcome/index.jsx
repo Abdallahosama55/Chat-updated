@@ -35,12 +35,12 @@ const examples = [
 const Main = styled.div`
   padding: 14px;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: calc(100vh - 54px);
 
+  grid-template-rows: 1fr auto;
+  height: calc(100vh - 54px);
   @media (min-width: 1200px) { /* Adjust the min-width value as needed */
-  padding-left:150px;
-  padding-right:150px;
+  padding-left: 12%; /* Adjust the padding values for larger screens */
+  padding-right:12%; /* Adjust the padding values for larger screens */
 }
 
 `;
@@ -77,9 +77,6 @@ const ChatHeader = styled.header`
   text-align: center;
   font-size: 24px;
   color: #5225ce;
-  
-  justify-content: center;
-  align-content: center;
 `;
 
 const ExamplesGrid = styled.div`
@@ -97,7 +94,7 @@ const ExamplesGrid = styled.div`
 const StartChat = styled(Stack)`
   width: 75%;
   margin: 0 auto;
-//margin-top:170px;
+margin-top:170px;
   @media (max-width: 950px) {
     width: 100%;
     margin-top:15px;
@@ -130,9 +127,9 @@ function Welcome() {
   return (
     <Main>
       <div className={"ms-auto"}>
-        <ChooseModel  />
+        
       </div>
-      {/*<Main direction={"vertical"} gap={2}>*/}
+      <Stack direction={"vertical"} gap={2}>
         <ChatHeader>
           <ChatLogo src={logo} alt={"Motqin logo"} />
           <div>
@@ -157,7 +154,7 @@ function Welcome() {
             isDisabled={isLoading}
           />
         </StartChat>
-      {/*</Main>*/}
+      </Stack>
     </Main>
   );
 }

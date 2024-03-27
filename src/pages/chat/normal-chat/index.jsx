@@ -20,8 +20,8 @@ const Main = styled.div`
   grid-template-rows: 1fr auto;
   height: calc(100vh - 54px);
   @media (min-width: 1200px) { /* Adjust the min-width value as needed */
-  padding-left: 270px; /* Adjust the padding values for larger screens */
-  padding-right: 270px; /* Adjust the padding values for larger screens */
+  padding-left: 22%; /* Adjust the padding values for larger screens */
+  padding-right:22%; /* Adjust the padding values for larger screens */
 }
 `;
 
@@ -124,7 +124,7 @@ function NormalChat() {
         ) : (
           <>
             {messages?.map((message) => {
-              return <Message response={message} fromUser={message.is_from_user}    Animate={Animate} key={message.id} />;
+              return <Message response={message}    Animate={Animate} key={message.id} />;
             })}
 
             {userMessage && (
@@ -144,7 +144,7 @@ function NormalChat() {
             {isWriting && (
               <Message
                 response={{
-                  content: "يكتب...",
+                  content: "",
                   id: 1234564,
                 
 
