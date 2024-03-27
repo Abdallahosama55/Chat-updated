@@ -1,0 +1,152 @@
+.nav-container {
+  width: 90%;
+  padding: 5px 5;
+}
+
+.nav-icon-container {
+  height: 5px;
+  align-items: center;
+  border-radius: 10px;
+}
+.nav-input-container {
+  height: 30px;
+}
+
+.nav-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #e5e8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.nav-input {
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-color: rgba(0, 26, 120, 0.1);
+}
+.nav-input::placeholder {
+  opacity: 30%;
+  font-size: 14px;
+  font-weight: 700px;
+}
+
+.user-list {
+  width: 180px;
+  height: 200px;
+  background-color: white;
+  top: 30px;
+  left: 0px;
+  z-index: 10;
+  box-shadow: 0px 0px 8px -5px black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.avatar-droplist {
+  width: 35px;
+  height: 35px;
+}
+
+.user-name-avatar {
+  display: flex !important;
+  align-items: center;
+  gap: 2px;
+}
+
+.avatar-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hello-text {
+  font-size: 10px;
+}
+
+.button-user-list {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  color: #001b79;
+  padding: 0px;
+}
+
+.user-navprogress {
+  position: absolute;
+  background-color: #ed5ab3;
+  z-index: 10;
+  border-radius: 50px;
+  height: 100%;
+}
+
+.user-navnumbers {
+  font-family: sans-serif;
+  margin-bottom: 4px;
+  padding-top: 14px;
+}
+
+.droplist-sub-icon {
+  max-width: 18px;
+}
+
+.droplist-subtext {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(82, 37, 206, 1);
+}
+
+.count-text {
+  font-size: 12px;
+  font-weight: 700;
+}
+.count-subtext {
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.count-mainsub-text {
+  font-weight: 400;
+}
+.btn-upgrade {
+  background-color: #5225ce;
+  color: white;
+  border-style: none;
+  font-size: 12px;
+}
+
+.usage-list {
+  transform: translateY(110%);
+  bottom: 0;
+  left: 0;
+  width: calc(200px + 7vw);
+  background-color: rgb(253, 253, 253);
+  z-index: 10;
+  box-shadow: 0px 0px 8px -5px black;
+  border-radius: 10px;
+  padding: 20px;
+}
+@media screen and (max-width: 500px) {
+  .usage-list {
+    right: 0;
+    left: unset;
+  }
+}
+.usage-title {
+  font-size: calc(10px + 0.33vw);
+  color: #5225ce;
+}
+.usage .all-words span:first-child {
+  font-weight: 300;
+  font-size: calc(10px + 0.33vw);
+}
+.usage .all-words span:nth-child(2) {
+  font-weight: 600;
+  font-size: calc(11px + 0.33vw);
+  color: #5225ce;
+}

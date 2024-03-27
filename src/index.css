@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "GE SS Two";
+  src: url("./assets/fonts/GESSTwoMedium-Medium.woff2") format("woff2"),
+    url("./assets/fonts/GESSTwoMedium-Medium.woff") format("woff"),
+    url("./assets/fonts/GESSTwoMedium-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Two";
+  src: url("./assets/fonts/GESSTwoBold-Bold.woff2") format("woff2"),
+    url("./assets/fonts/GESSTwoBold-Bold.woff") format("woff"),
+    url("./assets/fonts/GESSTwoBold-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Two";
+  src: url("./assets/fonts/GESSTwoLight-Light.woff2") format("woff2"),
+    url("./assets/fonts/GESSTwoLight-Light.woff") format("woff"),
+    url("./assets/fonts/GESSTwoLight-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "GE SS Two";
+
+  color: #001b79;
+}
+
+.font-light {
+  font-family: "GE SS Two Light" !important;
+}
+.text-pink {
+  color: #eb59b1;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.fade:not(.show) {
+  display: none !important;
+}

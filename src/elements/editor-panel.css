@@ -1,0 +1,9 @@
+.editor-panel {
+  width: 80%;
+}
+
+@media (max-width: 1550px) {
+  .editor-panel {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.font-basic {
+  color: rgba(82, 37, 206, 1);
+}
+.bg-blue {
+  background: rgba(82, 37, 206, 1);
+}
+.height-card {
+  min-height: 790px !important;
+  border: 1px solid #5522ef6a !important;
+}
+.border-blue {
+  border: 1px solid #5522ef6a;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles specific to screens with a maximum width of 768px (typical tablets and mobile devices) */
+  .height-card {
+    min-height: 600px !important;
+  }
+  /* Additional styles specific to smaller screens */
+}
+
+.font-number {
+  font-family: "Inter";
+}
+.offer-badge{
+  color: #5522ef;
+  font-weight: bolder;
+}
+
+.offer-badge2{
+  border: 1px solid #5522ef4b;
+  font-weight: bolder;
+  color: #5522ef;
+}
